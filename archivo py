@@ -1,1 +1,26 @@
+class Alumno:
+    def __init__(self, nombre, curso, nota):
+        self.nombre = nombre
+        self.curso = curso
+        self.nota = nota
 
+    def mostrar_datos(self):
+        print("nombre:", self.nombre)
+        print("curso:", self.curso)
+        print("nota:", self.nota)
+
+    def esta_aprobado(self):
+        if self.nota >= 6:
+            print("aprobado")
+        else:
+            print("desaprobado")
+
+
+alumno1 = Alumno("pedro", "3°", 8)
+alumno2 = Alumno("juan", "4°", 5)
+
+alumno1.mostrar_datos()
+alumno1.esta_aprobado()
+
+alumno2.mostrar_datos()
+alumno2.esta_aprobado()
